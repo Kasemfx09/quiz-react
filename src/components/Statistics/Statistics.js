@@ -8,15 +8,15 @@ const Statistics = () => {
   
   
   return (
-    <div className="py-6">   
+    <div className="py-6 bg-sky-300 ">    
 
-    <BarChart width={600} height={300} data={totalQuestions.data}>
-      <XAxis dataKey="name" stroke="#8884d8" />
-      <YAxis />
-      <Tooltip />
-      <CartesianGrid stroke="#bbb" strokeDasharray="5 5" />
-      <Bar dataKey="total" fill="#8884d8" barSize={30} />
-    </BarChart>
+      <BarChart className="mx-auto" width={600} height={300} data={totalQuestions.data}>
+        <XAxis dataKey="name" stroke="#0b0d79" />
+        <YAxis />
+        <Tooltip />
+        <CartesianGrid stroke="#7173f8" strokeDasharray="5 5" />
+        <Bar dataKey="total" fill="#0b0d79" barSize={30} />
+      </BarChart>    
     </div>
   );
 };
